@@ -5,17 +5,22 @@
 
 * {
     margin: 0;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+
+/* body {
+    
+} */
 
 #content {
     display: flex;
+    min-height: 100vh;
 }
 
 #left-section {
     background-image: url('assets/a-city-skyline-at-night-with-lights-streaking-by.jpg');
     background-size: cover;
-    height: 1289px;
-    width: 35%;
+    min-width: 35%;
 }
 
 #logo-background{
@@ -68,5 +73,64 @@
 
 
 #right-section {
+    display: flex;
+    flex-direction: column;
     width: 65%;
+    background-color: rgb(249,250,251);
+}
+
+#blurb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10%;
+    height: 30vh;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #FFFFFF;
+}
+
+#form h2 {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    margin-left: 100px;
+}
+
+#form form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 25vh;
+    width: 60%;
+    align-content: flex-start;
+}
+
+#form .form-input {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    text-transform: uppercase;
+   
+}
+
+#form .form-input > input {
+    width: 250px;
+}
+
+#account {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5%;
+    margin-left: 10%;
 }
