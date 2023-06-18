@@ -68,7 +68,6 @@
     color: #fff; 
 }
 
-
 #right-section {
     display: flex;
     flex-direction: column;
@@ -81,11 +80,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding-top: 2em;
     margin-left: 10%;
     height: 30vh;
     font-size: 1.2rem;
     font-weight: bold;
-
 }
 
 #form {
@@ -93,13 +92,11 @@
     flex-direction: column;
     align-items: flex-start;
     background-color: #FFFFFF;
+    padding: 2em;
 }
 
-#form h2 {
-    display: flex;
-    /* justify-content: center;
-    align-items: center; */
-    margin-left: 100px;
+#form > h2{
+    margin-left: 6.5%;
 }
 
 #form form {
@@ -107,8 +104,8 @@
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    height: 25vh;
-    width: 60%;
+    height: 30vh;
+    width: 65%;
     align-content: flex-start;
 }
 
@@ -117,11 +114,16 @@
     padding: 20px;
     flex-direction: column;
     text-transform: uppercase;
-   
+    flex-basis:200px;
 }
 
+#form .form-input > label{
+    color: gray;
+}
+
+
 #form .form-input > input {
-    width: 250px;
+    height: 20px;
 }
 
 #account {
@@ -129,5 +131,95 @@
     flex-direction: column;
     align-items: flex-start;
     margin-top: 5%;
-    margin-left: 10%;
+    margin-left: 6.5%;
+}
+
+#account button {
+    background-color: #596D48;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#account p {
+    margin-top: 1em;
+}
+
+/* Responsive design */
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+    #blurb {
+        font-size: 18px;
+    } 
+
+    #form form {
+        height: 35vh;
+        width: 80%;
+    }
+    #form .form-input {
+        flex-basis: 200px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) { 
+    #blurb {
+        font-size: 16px;
+    } 
+
+    #form form {
+        height: 30vh;
+        width: 90%;
+    }
+    #form .form-input {
+        flex-basis: 160px;
+        padding: 15px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) { 
+    #logo-section h1{
+        font-size: 4rem;
+    }
+
+    #blurb {
+        font-size: 14px;
+    } 
+
+    #form form {
+        height: 45vh;
+        width: 100%;
+        font-size: 0.8em;
+    }
+    #form .form-input {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) { 
+    #logo-section h1{
+        font-size: 3rem;
+    }
+    
+    #blurb {
+        font-size: 14px;
+    } 
+
+    #form form {
+        height: 45vh;
+        width: 100%;
+        font-size: 0.7em;
+    }
+
+    #form .form-input {
+        padding: 10px;
+    }
+
+    #account button {
+        padding: 10px 35px;
+        font-size: 16px;
+    }
 }
