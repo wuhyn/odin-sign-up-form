@@ -112,9 +112,6 @@
     flex-wrap: wrap;
     height: 35vh;
     width: 65%;
-    position: relative;
-    /* align-content: flex-start; */
-    right: 2.4rem;
 
 }
 
@@ -170,6 +167,7 @@
     #form form {
         height: 35vh;
         width: 80%;
+        padding-left: 2.5rem;
     }
     #form .form-input {
         flex-basis: 200px;
@@ -178,17 +176,19 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) { 
     #blurb {
+        width: 90%;
         font-size: 16px;
     } 
 
     #form form {
-        height: 30vh;
-        width: 90%;
-
+        height: 40vh;
+        width: 95%;
+        padding-left: 2.5rem;
     }
     #form .form-input {
-        flex-basis: 160px;
-        padding: 15px;
+        flex-basis: 150px;
+        padding: 3px;
+        background-color: black;
     }
 }
 
@@ -198,16 +198,22 @@
     }
 
     #blurb {
-        font-size: 14px;
+        width: 90%;
+        font-size: 1rem;
     } 
 
     #form form {
-        height: 45vh;
+        height: 90vh;
         width: 100%;
         font-size: 0.8em;
+        padding-left: 2.5rem;
     }
     #form .form-input {
-        padding: 10px;
+        flex-basis: 250px;
+        padding: 2px;
+    }
+    #right-section {
+        width: 65%;
     }
 }
 
@@ -217,17 +223,20 @@
     }
     
     #blurb {
-        font-size: 14px;
+        font-size: 1.2rem;
     } 
 
     #form form {
-        height: 45vh;
+        height: 90vh;
         width: 100%;
-        font-size: 0.7em;
+        font-size: 0.8em;
+        padding-left: 2.5rem;
     }
 
     #form .form-input {
-        padding: 10px;
+        flex-basis: 30px;
+        padding: 0px;
+        background-color: black;
     }
 
     #account button {
