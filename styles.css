@@ -55,12 +55,12 @@
     width: 150px;
 }
 
-#credits{
-    margin: 0 auto;
+#credits {
+    position: fixed;
     color: #fff;
     left: 7%;
     bottom: 0;
-    position: fixed;
+    padding: 1rem;
 }
 
 #credits a {
@@ -112,7 +112,6 @@
     flex-wrap: wrap;
     height: 35vh;
     width: 65%;
-
 }
 
 #form .form-input {
@@ -169,8 +168,13 @@
         width: 80%;
         padding-left: 2.5rem;
     }
+
     #form .form-input {
         flex-basis: 200px;
+    }
+
+    #credits {
+        font-size: 0.8rem;
     }
 }
 
@@ -185,14 +189,45 @@
         width: 95%;
         padding-left: 2.5rem;
     }
+
     #form .form-input {
         flex-basis: 150px;
         padding: 3px;
-        background-color: black;
     }
+
+    #credits {
+        font-size: 0.7rem;
+    }
+
 }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) { 
+
+    #content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #left-section {
+        min-width: 100%;
+        background-size: cover;
+        background-position: 0% 30%;
+    }
+
+    #credits {
+        position: static;
+        color: rgb(0, 0, 0);
+        padding: 1.5rem;
+    }
+    
+    #credits a {
+        color: rgb(0, 0, 0);
+    }
+
+    #right-section {
+        width: 100%;
+    }
+    
     #logo-section h1{
         font-size: 4rem;
     }
@@ -206,41 +241,82 @@
         height: 90vh;
         width: 100%;
         font-size: 0.8em;
-        padding-left: 2.5rem;
     }
     #form .form-input {
-        flex-basis: 250px;
+        flex-basis: 350px;
         padding: 2px;
     }
-    #right-section {
-        width: 65%;
+
+    #account {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 20vh;
+    }
+    
+    #account button {
+        margin-top: 1.5rem;
+        padding: 10px 30px;
+        font-size: 16px;
     }
 }
 
 @media only screen and (max-width: 480px) { 
-    #logo-section h1{
-        font-size: 3rem;
+
+    #content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #left-section {
+        min-width: 100%;
+        background-size: cover;
+        background-position: 0% 30%;
+    }
+
+    #credits {
+        position: static;
+        color: rgb(0, 0, 0);
+        padding: 1.5rem;
     }
     
+    #credits a {
+        color: rgb(0, 0, 0);
+    }
+
+    #right-section {
+        width: 100%;
+    }
+    
+    #logo-section h1{
+        font-size: 4rem;
+    }
+
     #blurb {
-        font-size: 1.2rem;
+        width: 90%;
+        font-size: 1rem;
     } 
 
     #form form {
         height: 90vh;
         width: 100%;
         font-size: 0.8em;
-        padding-left: 2.5rem;
     }
-
     #form .form-input {
-        flex-basis: 30px;
-        padding: 0px;
-        background-color: black;
+        flex-basis: 350px;
+        padding: 2px;
     }
 
+    #account {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 20vh;
+    }
+    
     #account button {
-        padding: 10px 35px;
+        margin-top: 1.5rem;
+        padding: 10px 30px;
         font-size: 16px;
     }
 }
