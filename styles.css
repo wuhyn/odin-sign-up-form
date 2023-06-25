@@ -92,6 +92,8 @@
     font-style: italic;
 }
 
+/* Form */
+
 #form {
     display: flex;
     flex-direction: column;
@@ -128,12 +130,26 @@
     color: gray;
 }
 
-
 #form .form-input > input {
+    outline: none;
     height: 20px;
+    border: 1px solid #E5E7EB;
 }
 
-#account {
+#form .form-input > input:focus {
+    outline: none;
+    border:1px solid blue;
+    border-radius:0;
+}
+.form-password-error {
+    border:1px solid red !important;
+}
+
+#password-error {
+    font-size: 0.5em;
+}
+
+#sign-up {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -141,7 +157,7 @@
     margin-left: 5%;
 }
 
-#account button {
+#sign-up button {
     background-color: #596D48;
     border: none;
     border-radius: 5px;
@@ -153,7 +169,7 @@
     font-size: 16px;
 }
 
-#account p {
+#sign-up p {
     margin-top: 1em;
 }
 
@@ -196,7 +212,7 @@
     }
 
     #credits {
-        font-size: 0.7rem;
+        font-size: 0.7rem
     }
 
 }
@@ -247,14 +263,14 @@
         padding: 2px;
     }
 
-    #account {
+    #sign-up {
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 20vh;
     }
     
-    #account button {
+    #sign-up button {
         margin-top: 1.5rem;
         padding: 10px 30px;
         font-size: 16px;
@@ -307,14 +323,14 @@
         padding: 2px;
     }
 
-    #account {
+    #sign-up {
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 20vh;
     }
     
-    #account button {
+    #sign-up button {
         margin-top: 1.5rem;
         padding: 10px 30px;
         font-size: 16px;

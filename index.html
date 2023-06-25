@@ -26,7 +26,7 @@
             </div>
             <div id="form">
                 <h3>Let's do this!</h3>
-                <form action="./index.html" method="post">
+                <form id="sign_up_form" action="./index.html" method="post">
                     <div class="form-input">
                         <label for="first_name">First Name</label>
                         <input type="text" id="first_name" name="first_name">
@@ -44,19 +44,20 @@
                         <input type="number" id="phone_number" name="phone_number">
                     </div>
                     <div class="form-input">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
+                        <label for="password1">Password</label>
+                        <input type="password" id="password1" name="password1">
+                        <p id="password-error"></p>
                     </div>
                     <div class="form-input">
-                        <label for="confirm_password">Confirm Password</label>
-                        <input type="password">
+                        <label for="password2">Confirm Password</label>
+                        <input type="password"  id="password2" name="password2">
                     </div>
                 </form>
                 
             </div>
-            <div id="account">
-                <button type="submit" id="confirm_password" name="confirm_password">Create Account</button>
-                <p>Already have an account <a href="#">Log in</a></p>
+            <div id="sign-up">
+                <button onclick="signUp()">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
             </div>
         </div>
     </div>
@@ -68,6 +69,6 @@
             </p>
         </div>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
